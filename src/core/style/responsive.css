@@ -1,0 +1,1000 @@
+/*header responsive*/
+@media screen and (max-width: 1234px) {
+  .container {
+    max-width: initial;
+    padding: 0 32px;
+  }
+}
+
+/*ipad lanscape*/
+@media screen and (max-width:  1199.98px) {
+  .header__logo {
+    margin-right: 96px;
+  }
+
+  .header__nav__item {
+    margin-right: 26px;
+  }
+}
+
+/*Ipad Air Portait*/
+@media screen and (max-width: 991.98px) {
+  .container {
+    padding: 0 24px;
+  }
+
+  .header__wrapper {
+    position: relative;
+    font-size: 0;
+    padding: 24px 0;
+  }
+
+  .header__logo {
+    display: inline-block;
+    margin: 0;
+    float: none;
+  }
+
+  .burger-menu {
+    display: block;
+    outline: 0;
+    padding: 14px 0 ;
+    background-color: transparent;
+    position: absolute;
+    right: -11px;
+    top: 12px;
+    border: 0;
+    width: 48px;
+    height: 48px;
+  }
+  .burger__menu__bar {
+    display: block;
+    height: 3px;
+    width: 26px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    -ms-border-radius: 2px;
+    margin: 0 auto 4px;
+    background-color: #000;
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+  }
+
+  .burger__menu__bar:last-child {
+    margin-bottom: 0;
+  }
+
+  .show-menu .burger__menu__bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .show-menu .burger__menu__bar:nth-child(2) {
+    transform: scale(0);
+  }
+
+  .show-menu .burger__menu__bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .header__menu {
+    position: fixed;
+    left: 0;
+    top: 70px;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 32px 32px 48px;
+    overflow-Y: auto;
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform-origin: left center;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+  }
+
+  .show-menu {
+    transform: none;
+    transition-delay: 0ms;
+  }
+
+  .header__nav.main {
+    opacity: 0;
+    float: none;
+    margin: 0 0 40px;
+    padding-bottom: 40px;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    position: relative;
+  }
+
+  .header__nav.main::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #01996d;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    transform-origin: left center;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    -ms-transform-origin: left center;
+    transition: all .3S ease;
+    -webkit-transition: all .3S ease;
+    -moz-transition: all .3S ease;
+    -o-transition: all .3S ease;
+    -ms-transition: all .3S ease;
+    border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -o-border-radius: 1px;
+    -ms-border-radius: 1px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .06);
+  }
+
+  .show-menu  .header__nav.main {
+    opacity: 1;
+    transition-delay: 50ms;
+  }
+
+  .show-menu .header__nav.main::after {
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    transition-delay: 500ms;
+    -webkit-transition-delay: 500ms;
+    -moz-transition-delay: 500ms;
+    -o-transition-delay: 500ms;
+    -ms-transition-delay: 500ms;
+  }
+
+  .header__nav__item {
+    display: block;
+    margin: 0 0 40px;
+    font-size: 24px;
+    transition: all .4S ease;
+    -webkit-transition: all .4S ease;
+    -moz-transition: all .4S ease;
+    -o-transition: all .4S ease;
+    -ms-transition: all .4S ease;
+    opacity: 0;
+  }
+
+  .show-menu .header__nav__item {
+    opacity: 1;
+   transition-delay: 200ms;
+   -webkit-transition-delay: 200ms;
+   -moz-transition-delay: 200ms;
+   -o-transition-delay: 200ms;
+   -ms-transition-delay: 200ms;
+  }
+
+
+  .menu-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .header__nav.auth {
+    float: none;
+  }
+}
+
+/*ipad iphone lancscape,galaxy*/
+@media screen and (max-width: 767.98px) {
+  .header__wrapper {
+    padding: 20px 0;
+  }
+
+  .burger-menu {
+    top: 8px;
+  }
+
+  .header__menu {
+    top: 63px;
+    padding: 24px 24px 40px;
+  }
+
+  .header__nav.main {
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+  }
+
+  .header__nav__item {
+    margin-bottom: 32px;
+    font-size: 20px;
+  }
+}
+
+/*extra small potrait galaxy/iphone*/
+@media screen and (max-width: 575.98px) {
+}
+
+/*iphone 5 gen 5 (retina)*/
+@media screen and (max-width: 320.90px){
+}
+/*HEADER RESPONSIVE*/
+
+
+/*BANNER REPONSIVE*/
+@media screen and (max-width: 1234px) {
+}
+
+/*ipad lanscape*/
+@media screen and (max-width:  1199.98px) {
+  .banner {
+    min-height: 540px;
+  }
+
+  .banner__desc {
+   max-width: 400px;
+   }
+
+  .banner__title {
+    font-size: 56px;
+  }
+}
+
+/*Ipad Air Portait*/
+@media screen and (max-width: 991.98px) {
+  .banner {
+    padding-top: 72px;
+    min-height: 440px;
+    max-height: 800px;
+  }
+
+  .banner__desc__desc {
+    margin: 0 0 32px;
+  }
+}
+
+/*ipad iphone lancscape,galaxy*/
+@media screen and (max-width: 767.98px) {
+  .banner {
+    padding-top: 64px;
+  }
+
+  .banner__desc {
+    max-width: 299px;
+  }
+
+  .banner__title {
+    font-size: 32px;
+    margin-bottom: 18px;
+  }
+
+  .banner__desc__desc {
+    font-size: 16px;
+    margin: 0 0 18px;
+  }
+
+  .banner .btn {
+    font-size: 18px;
+    padding: 10px 36px;
+  }
+}
+
+/*extra small*/
+@media screen and (max-width: 575.98px) {
+  .banner__desc {
+    max-width: 252px;
+  }
+
+  .banner__title {
+    font-size: 28px;
+    margin-bottom: 18px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 8px 24px;
+  }
+}
+
+/*iphone 5 gen 5 (retina)*/
+@media screen and (max-width: 320.90px) {
+  .banner__desc {
+    max-width: 225px;
+  }
+
+  .banner__title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .banner__desc__desc {
+    margin: 0 0 22px;
+  }
+}
+/*/BANNER REPONSIVE*/
+
+
+/*HOW IS WORKS RESPONSIVE*/
+/*Default*/
+@media screen and (max-width: 1234px) {
+}
+
+/*ipad lanscape*/
+@media screen and (max-width:  1199.98px) {
+  .works {
+    padding: 64px 0 92px 0;
+  }
+
+  .works__title {
+    font-size: 34px;
+  }
+
+  .works__desc {
+    font-size: 18px;
+  }
+}
+
+/*Ipad Portait*/
+@media screen and (max-width: 991.98px) {
+  .works {
+    padding: 80px 0;
+  }
+
+  .works__left {
+    float: none;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .works__sub__title {
+    font-size: 32px;
+    text-align: left;
+  }
+  
+  .works__title {
+    font-size: 48px;
+    text-align: left;
+  }
+
+  .works__right  {
+    float: none;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+  }
+
+  .works__desc {
+    font-size: 24px;
+  }
+}
+
+/*galaxy Lanscape*/
+@media screen and (max-width: 767.98px) {
+  .works {
+    padding: 56px 0;
+  }
+
+  .works__left {
+    margin-bottom: 20px;
+  }
+
+  .works__sub__title {
+    font-size: 20px;
+  }
+  
+  .works__title {
+    font-size: 32px;
+  }
+
+  .works__desc {
+    font-size: 20px;
+  }
+}
+
+/*galaxy portait*/
+@media screen and (max-width: 575.98px) {
+  .works {
+    padding: 48px 0;
+  }
+
+  .works__title {
+    font-size: 24px;
+  }
+
+  .works__right {
+    padding: 0;
+  }
+
+  .works__desc {
+    font-size: 18px;
+  }
+}
+
+/*iphone 5 gen 5 (retina)*/
+@media screen and (max-width: 320.90px) {
+  .works__sub__title {
+    font-size: 18px;
+  }
+}
+/*/RESPONSIVE HOW IT WORK*/
+
+/*RESPONSIVE GALLERY*/
+/*Default*/
+@media screen and (max-width: 1234px) {
+  .gallery__item img {
+    display: block;
+  }
+}
+
+/*ipad lanscape*/
+@media screen and (max-width:  1199.98px) {
+  .gallery {
+    padding-bottom: 92px;
+  }
+
+  .gallery__list {
+    margin: 0 -32px;
+  }
+
+  .gallery__item {
+    font-size: 19px;
+    padding: 0 32px;
+  }
+
+  .gallery__title::before {
+    font-size: 126px;
+  }
+
+  .gallery__title {
+    font-size: 22px;
+  }
+
+  .gallery__item span {
+    left: 64px;
+    top: 92px;
+    max-width: 300px;
+  }
+}
+
+/*Ipad Portait*/
+@media screen and (max-width: 991.98px) {
+  .gallery {
+    padding-bottom: 80px;
+  }
+
+  .gallery__list {
+    margin: 0;
+  }
+
+  .gallery__item {
+    float: none;
+    width: 100%;
+    padding: 0;
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 24px;
+  }
+
+  .gallery__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .gallery__title::before {
+    font-size: 150px;
+  }
+
+  .gallery__item img {
+    max-width: 360px;
+  }
+
+  .gallery__title {
+    text-align: left;
+    font-size: 32px;
+  }
+
+  .gallery__item span {
+    left: 84px;
+    top: 104px;
+  }
+
+  .gallery__desc {
+    margin: 32px 0;
+  }
+}
+
+/*galaxy Lanscape*/
+@media screen and (max-width: 767.98px) {
+  .gallery {
+    padding-bottom: 56px;
+  }
+
+  .gallery__item {
+    font-size: 20px;
+  }
+
+  .gallery__title::before {
+    font-size: 92px;
+  }
+
+  .gallery__title {
+    font-size: 24px;
+  }
+
+  .gallery__item span {
+    left: 56px;
+    top: 53px;
+    width: 224px;
+  }
+
+  .gallery__desc {
+    margin: 16px 0;
+  }
+}
+
+/*galaxy portait*/
+@media screen and (max-width: 575.98px) {
+  .gallery {
+    padding-bottom: 48px;
+  }
+
+  .gallery__item {
+    font-size: 18px;
+  }
+
+  .gallery__item img {
+    max-width: 100%;
+  }
+
+  .gallery__title::before {
+    font-size: 86px;
+  }
+
+  .gallery__title {
+    font-size: 20px;
+  }
+
+  .gallery__desc {
+    margin: 14px 0;
+  }
+}
+
+/*iphone 5 gen 5 (retina)*/
+@media screen and (max-width: 320.90px) {
+}
+/*/RESPONSIVE GALLERY*/
+
+
+/*RESPONSIVE VIDEO*/
+/*Default*/
+@media screen and (max-width: 1234px) {
+}
+
+/*ipad lanscape*/
+@media screen and (max-width:  1199.98px) {
+  .video {
+    padding: 92px 0;
+  }
+
+  .video__txt {
+    padding: 16px 42px 0 0;
+  }
+
+  .video__title {
+    margin: 0 0 24px;
+    font-size: 36px;
+  }
+
+  .video__desc {
+    margin: 0 0 40px;
+  }
+}
+
+/*Ipad Portait*/
+@media screen and (max-width: 991.98px) {
+  .video {
+    padding: 80px 0;
+  }
+
+  .video__img {
+    float: none;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .video__txt {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+
+  .video__title {
+    font-size: 40px;
+  }
+
+  .video__desc {
+    margin-bottom: 48px;
+  }
+}
+
+/*galaxy Lanscape*/
+@media screen and (max-width: 767.98px) {
+  .video {
+    padding: 56px 0;
+  }
+
+  .video__title {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .video__desc {
+    margin-bottom: 40px;
+  }
+}
+
+/*galaxy portait*/
+@media screen and (max-width: 575.98px) {
+  .video {
+    padding: 48px 0;
+  }
+
+  .video__title {
+    font-size: 24px;
+  }
+
+  .video__desc {
+    margin-bottom: 24px;
+    font-size: 18px;
+  }
+
+  .video__img::before  {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/*iphone 5 gen 5 (retina)*/
+@media screen and (max-width: 320.90px) {
+}
+/*/RESPONSIVE VIDEO*/
+
+
+/*RESPONSIVE OUR-PRODUCT*/
+/*Default*/
+@media screen and (max-width: 1234px) {
+}
+
+/*ipad lanscape*/
+@media screen and (max-width:  1199.98px) {
+  .product {
+    padding: 92px 0;
+  }
+
+  .thumbnail {
+    width: 240px;
+    padding: 0 24px 24px;
+    bottom: 0;
+  }
+
+  .thumbnail-title {
+    font-size: 14px;
+    padding-top: 16px;
+  }
+
+  .thumbnail-img {
+    margin: 10px auto;
+    width: 72px;
+    height: 72px;
+  }
+
+  .thumbnail-name {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+
+  .thumbnail-subtitle {
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+
+  .thumbnail-list-item {
+    font-size: 15px;
+    margin-bottom: 14px;
+  }
+
+  .product__subtitle {
+    margin: 0 0 8px;
+    font-size: 24px;
+  }
+
+  .product__title {
+    font-size: 36px;
+    margin-bottom: 18px;
+  }
+
+  .product__desc {
+    margin-bottom: 32px;
+  }
+}
+
+/*Ipad Portait*/
+@media screen and (max-width: 991.98px) {
+  .product {
+    padding: 80px 0;
+  }
+
+  .product__txt {
+    float: none;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+
+  .product__title {
+    font-size: 42px;
+  }
+
+  .product__desc {
+    font-size: 24px;
+  }
+
+  .product__wrapper {
+    float: none;
+    width: 100%;
+    padding: 0 0 0 92px;
+  }
+
+  .product__img {
+    padding-bottom: 105%;
+  }
+
+  .product__img__el {
+    padding-bottom: 72px;
+  }
+
+  .thumbnail {
+    width: 280px;
+    padding: 0 40px 32px;
+  }
+
+  .thumbnail-title {
+    font-size: 16px;
+    padding-top: 20px;
+  }
+
+  .thumbnail-img {
+    margin: 12px auto;
+    width: 80px;
+    height: 80px;
+  }
+
+  .thumbnail-name {
+    font-size: 14px;
+  }
+
+  .thumbnail-subtitle {
+    font-size: 17px;
+    margin-bottom: 16px;
+  }
+}
+
+/*galaxy Lanscape*/
+@media screen and (max-width: 767.98px) {
+  .product {
+    padding: 56px 0;
+  }
+
+  .product__txt {
+    margin-bottom: 32px;
+    padding: 0;
+  }
+
+  .product__title {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .product__desc {
+    font-size: 20px;
+  }
+
+  .product__img {
+    padding-bottom: 100%;
+  }
+
+  .thumbnail {
+    width: 240px;
+    padding: 0 40px 24px;
+  }
+
+  .thumbnail-title {
+    font-size: 12px;
+    padding-top: 16px;
+  }
+
+  .thumbnail-img {
+    margin: 8px auto;
+    width: 64px;
+    height: 64px;
+  }
+
+  .thumbnail-name {
+    font-size: 10px;
+    margin-bottom: 6px;
+  }
+
+  .thumbnail-subtitle {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .thumbnail-list-item {
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+}
+
+/*galaxy portait*/
+@media screen and (max-width: 575.98px) {
+  .our__product {
+    padding: 48px 0;
+  }
+
+  .product__subtitle {
+    font-size: 22px;
+    margin: 0;
+  }
+  .product__title {
+    font-size: 26px;
+  }
+
+  .product__desc {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+
+  .product__wrapper {
+    padding: 0 0 0 72px;
+  }
+
+  .product__img {
+    padding-bottom: 120%;
+  }
+
+  .product__img__el {
+    padding-bottom: 56px;
+  }
+
+  .thumbnail {
+    width: 164px;
+    padding: 0 20px 12px;
+  }
+
+  .thumbnail-title {
+    font-size: 10px;
+    padding-top: 10px;
+  }
+
+  .thumbnail-img {
+    margin: 4px auto;
+    width: 48px;
+    height: 48px;
+  }
+
+  .thumbnail-name {
+    font-size: 9px;
+    margin-bottom: 0;
+  }
+
+  .thumbnail-subtitle {
+    font-size: 11px;
+    margin-bottom: 4px;
+  }
+
+  .thumbnail-list-item {
+    font-size: 9px;
+    margin-bottom: 0;
+  }
+}
+
+/*iphone 5 gen 5 (retina)*/
+@media screen and (max-width: 320.90px) {
+  .product__img {
+    padding-bottom: 140%;
+  }
+}
+/*/RESPONSIVE OUR-PRODUCT*/
+
+
+/*RESPONSIVE FOOTER*/
+/*Default*/
+@media screen and (max-width: 1234px) {
+}
+
+/*ipad lanscape*/
+@media screen and (max-width:  1199.98px) {
+  .footer {
+    padding: 80px 0;
+  }
+
+  .footer__logo, 
+  .footer__menu__item {
+    margin-bottom: 48px;
+  }
+}
+
+/*Ipad Portait*/
+@media screen and (max-width: 991.98px) {
+  .footer {
+    padding: 72px 0;
+  }
+
+  .footer__logo__el {
+    height: 28px;
+  }
+
+  .footer__logo,
+  .footer__menu__item {
+    margin-bottom: 40px;
+  }
+
+  .footer__menu__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/*galaxy Lanscape*/
+@media screen and (max-width: 767.98px) {
+  .footer {
+    padding: 64px 0;
+  }
+
+  .footer__logo__el {
+    height: 24px;
+  }
+
+  .footer__logo,
+  .footer__menu__item {
+    margin-bottom: 32px;
+  }
+
+  .footer__menu__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .footer__menu__link {
+    font-size: 20px;
+  }
+}
+
+/*galaxy portait*/
+@media screen and (max-width: 575.98px) {
+  .footer {
+    padding: 56px 0;
+  }
+}
+
+/*iphone 5 gen 5 (retina)*/
+@media screen and (max-width: 320.90px) {
+  .footer {
+    padding: 48px 0;
+  }
+}
+/*RESPONSIVE FOOTER*/
+
