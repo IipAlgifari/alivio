@@ -40,7 +40,7 @@ const Header = () => {
       <div className="container">
         <div className="header">
           <div className="header__wrapper">
-            <Link href="#" className="header__logo">
+            <Link to="#" className="header__logo">
               <img src="asset/images/logo/Logo.svg" className="header__logo__el" alt="Alivio"/>
             </Link>
             <button className="burger-menu" id="jsMenu" onClick={handleToggleMenu}>
@@ -50,14 +50,14 @@ const Header = () => {
             </button>
             <div className={`header__menu ${showMenu ? 'show-menu' : ''}`} id="jsHeaderMenu">
               <ul className="header__nav main">
-                <li className="header__nav__item"><Link href="#" className="header__nav__link active">Why Alivio</Link></li>
-                <li className="header__nav__item"><Link href="#" className="header__nav__link">Solutions</Link></li>
-                <li className="header__nav__item"><Link href="#" className="header__nav__link">Community</Link></li>
-                <li className="header__nav__item"><Link href="#" className="header__nav__link">Pricing</Link></li>
+                <li className="header__nav__item"><Link to="#" className="header__nav__link active">Why Alivio</Link></li>
+                <li className="header__nav__item"><Link to="#" className="header__nav__link">Solutions</Link></li>
+                <li className="header__nav__item"><Link to="#" className="header__nav__link">Community</Link></li>
+                <li className="header__nav__item"><Link to="#" className="header__nav__link">Pricing</Link></li>
               </ul>
               <ul className="header__nav auth">
-                <li className="header__nav__item"><Link href="#" className="header__nav__link">Sig in</Link></li>
-                <li className="header__nav__item"><Link href="#" className="btn">Start Trial</Link></li>
+                <li className="header__nav__item"><Link to="#" className="header__nav__link">Sig in</Link></li>
+                <li className="header__nav__item"><Link to="#" className="btn">Start Trial</Link></li>
               </ul>
             </div>
           </div>
