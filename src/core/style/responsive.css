@@ -3,6 +3,7 @@
   .container {
     max-width: initial;
     padding: 0 32px;
+    overflow: hidden;
   }
 }
 
